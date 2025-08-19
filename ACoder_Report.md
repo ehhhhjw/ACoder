@@ -2,11 +2,11 @@
 
 ## Abstract
 
-We present ACoder, an agentic system that extends [Cline](https://github.com/cline/cline)'s work and powered by four leading foundation models - Anthropic’s Claude 4.0 Sonnet, Claude 4.1 Opus, OpenAI’s GPT\-5, and Google’s Gemini 2.5 Pro 0617. It employs a streamlined subagent architecture, following the philosophy we call _Subagent-as-a-Tool_.
+We present ACoder, an agentic system that extends [Cline](https://github.com/cline/cline)'s work and powered by four leading foundation models - Anthropic’s Claude 4.0 Sonnet, Claude 4.1 Opus, OpenAI’s GPT- 5, and Google’s Gemini 2.5 Pro 0617. It employs a streamlined subagent architecture, following the philosophy we call _Subagent-as-a-Tool_.
 
-As of now, ACoder has achieved a **76.4%** resolved task rate on SWE\-bench Verified, poised to take the top spot on the leaderboard, showcasing the strength of its architecture and methodology.
+As of now, ACoder has achieved a **76.4%** resolved task rate on SWE- bench Verified, poised to take the top spot on the leaderboard, showcasing the strength of its architecture and methodology.
 
-Inspired by [Trae](https://github.com/bytedance/trae-agent), we adopt a two\-stage approach: Generation → Selection, resulting in an improvement of approximately 10% in the problem-solving rate compared to the Single Attempt baseline.
+Inspired by [Trae](https://github.com/bytedance/trae-agent), we adopt a two- stage approach: Generation → Selection, resulting in an improvement of approximately 10% in the problem-solving rate compared to the Single Attempt baseline.
 
 ## Architecture
 
