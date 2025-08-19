@@ -2,7 +2,7 @@
 
 ## Abstract
 
-We present ACoder, an agentic system that extends [Cline](https://github.com/cline/cline)'s work and powered by four leading foundation models—Anthropic’s Claude 4.0 Sonnet, Claude 4.1 Opus, OpenAI’s GPT-5, and Google’s Gemini 2.5 Pro 0617. It employs a streamlined subagent architecture, following the philosophy we call _Subagent-as-a-Tool_.
+We present ACoder, an agentic system that extends [Cline](https://github.com/cline/cline)'s work and powered by four leading foundation models - Anthropic’s Claude 4.0 Sonnet, Claude 4.1 Opus, OpenAI’s GPT-5, and Google’s Gemini 2.5 Pro 0617. It employs a streamlined subagent architecture, following the philosophy we call _Subagent-as-a-Tool_.
 
 As of now, ACoder has achieved a **76.4%** resolved task rate on SWE-bench Verified, poised to take the top spot on the leaderboard, showcasing the strength of its architecture and methodology.
 
@@ -24,7 +24,7 @@ In practical software engineering—particularly in problem-solving scenar
 
 We propose **DeepDiscovery**, an innovative subagent specifically designed for code search. Like a human developer, it can perform deep exploration of the repository to discover all code files relevant to the task.
 
-![pic.png](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/a2QnV4jWE4Ma7O4X/img/87eb47cf-3cab-4d63-ab80-e68e2f18da5f.png)
+![Code%20Search%20Subagent.png](https://github.com/ACoder-AI/ACoder/blob/main/images/Code%20Search%20Subagent.png)
 
 DeepDiscovery adopts a two-stage approach—**Location** followed by **Inference**—reflecting how human developers tackle structured, dependency-rich codebases. Developers typically begin by identifying a few key files related to the problem, then progressively trace dependency relationships to uncover all relevant code and understand its interconnections before making changes.
 
@@ -39,7 +39,7 @@ The final output is a set of related files, the reasons they were s
 
 The task-handling process of our system comprises two stages: 1) Generation and 2) Selection.  We will describe each stage in detail below.
 
-![image.png](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/a2QnV4jWE4Ma7O4X/img/2d68f7d1-98d0-4bab-923a-890299bb3b79.png)
+![Methodology.png](https://github.com/ACoder-AI/ACoder/blob/main/images/Methodology.png)
 
 ### Stage 1: Generation
 
@@ -56,7 +56,7 @@ Three models—Claude 4.0 Sonnet, GPT-5, and Gemini 2.5 Pro 0617—are�
 
 ### Stage 2: Selection
 
-![image](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/a2QnV4jWE4Ma7O4X/img/266b6f76-69e6-4cdd-a341-541974915e09.png)
+![selector.png](https://github.com/ACoder-AI/ACoder/blob/main/images/selector.png)
 
 After the **Generation** stage, the system proceeds to the **Selection** stage, which determines the optimal patch from the set of candidate patches. This stage is built on the LLM-as-a-Judge philosophy, in which multiple LLMs collaboratively evaluate candidate patches. The ACoder Agent is reused as a judge, and is provided with both the voting task and the complete codebase. This ensures the judge operates with full capabilities and sufficient context, leading to more accurate selection outcomes.
 
