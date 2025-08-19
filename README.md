@@ -1,6 +1,6 @@
 # ACoder
 
-ACoder is an autonomous software engineering system that leverages subagent architecture to tackle complex software engineering tasks efficiently.
+ACoder is an autonomous software engineering system that leverages subagent architecture to tackle complex software engineering tasks efficiently. This repository is for communication and contact with us.
 
 ## 🌟 Overview
 
